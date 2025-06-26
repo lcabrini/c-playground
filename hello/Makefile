@@ -1,6 +1,8 @@
 CC = gcc
 OBJ = main.o
 
+all: hello
+
 hello: $(OBJ)
 	$(CC) -o $@ $^
 
