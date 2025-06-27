@@ -1,9 +1,10 @@
 CC = gcc
 OBJ = main.o
+TARGET = hello
 
-all: hello
+all: $(TARGET)
 
-hello: $(OBJ)
+$(TARGET): $(OBJ)
 	$(CC) -o $@ $^
 
 %.o: %.c
