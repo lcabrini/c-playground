@@ -21,8 +21,12 @@ int main(int argc, char **argv) {
         BeginDrawing();
         ClearBackground(BLACK);
 
-        for (int r = 1; r <= endRadius; r += step) {
-            DrawEllipseLines(midX, midY, r, 350 - r, RED);
+        for (int r = 0; r <= 350; ++r) {
+            DrawEllipseLines(midX, midY, r, 350-r, RED);
+        }
+
+        for (int r = 0; r <= endRadius; r += step) {
+            DrawEllipseLines(midX, midY, r, 350-r, WHITE);
         }
 
         EndDrawing();
