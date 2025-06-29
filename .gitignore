@@ -54,3 +54,4 @@ dkms.conf
 # Executables
 hello/hello
 raylib/basic/basic
+fizzbuzz/fizzbuzz
